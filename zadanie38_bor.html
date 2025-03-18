@@ -55,24 +55,6 @@
                 wyswietl.innerHTML += "<p style='color: green; font-size: 42px;'>|| lub x=3 y=4 (x==8 || y==6) wynik-->fałsz</p>";
                 wyswietl.innerHTML += "<p style='color: green; font-size: 42px;'>! zaprzeczenie x=3 y=4 !(x==y) wynik-->prawda</p>";
             } 
-            else if (opcja_bor == opcja2) {
-                wyswietl.innerHTML = "<p style='color: blue;'>Jesteś w opcji " + opcja2 + " --> sprawdzanie przedziału</p>";
-                var liczba_bor = parseInt(prompt("Podaj liczbę do sprawdzenia:", ""));
-                if (liczba_bor >= liczba1 && liczba_bor < liczba2) {
-                    wyswietl.innerHTML += "<p style='color: green;'>Liczba " + liczba_bor + " należy do przedziału.</p>";
-                } else {
-                    wyswietl.innerHTML += "<p style='color: red;'>Liczba " + liczba_bor + " nie należy do przedziału.</p>";
-                }
-            } 
-            else if (opcja_bor == opcja3) {
-                wyswietl.innerHTML = "<p style='color: blue;'>Jesteś w opcji " + opcja3 + " --> sprawdzanie przedziału (-∞," + liczba3 + ") lub [" + liczba4 + " +∞)</p>";
-                var liczba2_bor = parseInt(prompt("Podaj liczbę do sprawdzenia:", ""));
-                if (liczba2_bor < liczba3 || liczba2_bor >= liczba4) {
-                    wyswietl.innerHTML += "<p style='color: green;'>Liczba " + liczba2_bor + " należy do przedziału.</p>";
-                } else {
-                    wyswietl.innerHTML += "<p style='color: red;'>Liczba " + liczba2_bor + " nie należy do przedziału.</p>";
-                }
-            } 
             else {
                 wyswietl.innerHTML = "<p style='color: red;'>Niepoprawna opcja. Wybierz poprawny numer.</p>";
             }
